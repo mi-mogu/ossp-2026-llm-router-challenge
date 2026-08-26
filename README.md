@@ -5,6 +5,14 @@ SPDX-License-Identifier: Apache-2.0
 
 # Efficient LLM Routing Challenge
 
+> This fork contains the `OSSP 2026 Prompt Router` submission implementation.
+> Build it with
+> `docker build --platform linux/arm64 -f container/Dockerfile -t ossp-router .`
+> and run `router-run --input INPUT.json --tier TIER --output OUTPUT.json`.
+> Model provenance and runtime notices are recorded in
+> [MODEL_PROVENANCE.md](MODEL_PROVENANCE.md) and
+> [ROUTER_THIRD_PARTY_NOTICES.md](ROUTER_THIRD_PARTY_NOTICES.md).
+
 **프롬프트 난이도·특성에 따라 최적 모델을 선택하는 compute-efficient routing
 오픈소스 라우터 개발 챌린지**
 

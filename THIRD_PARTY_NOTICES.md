@@ -62,3 +62,11 @@ AIME problem text is not included in this repository or release archive.
 `data/train/aime-selection.json` and `data/dev/aime-selection.json` contain
 only public source keys and expected prompt hashes. Users fetch the pinned
 public sources and materialize those prompts locally.
+
+## Participant router runtime
+
+The participant router additionally bundles pinned Python runtime dependencies,
+an embedded tokenizer representation derived from `microsoft/deberta-v3-small`,
+and two locally trained routing artifacts. Their versions, hashes, purposes,
+licenses, and provenance are recorded in `ROUTER_THIRD_PARTY_NOTICES.md` and
+`MODEL_PROVENANCE.md`. No DeBERTa neural-network weights are included or run.

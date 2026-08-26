@@ -2,30 +2,20 @@
 # SPDX-License-Identifier: Apache-2.0
 
 **
-!src/
-src/**
-!src/ossp_router/
-src/ossp_router/**
-!src/ossp_router/__init__.py
-!src/ossp_router/cli.py
-!src/ossp_router/heuristic.py
-!src/ossp_router/image_evidence.py
-!src/ossp_router/operator_helper.py
-!src/ossp_router/orchestrator.py
-!src/ossp_router/protocol.py
-!src/ossp_router/runtime.py
-!src/ossp_router/scoring.py
-!src/ossp_router/resources/
-src/ossp_router/resources/**
-!src/ossp_router/resources/__init__.py
-!src/ossp_router/resources/routing-policy.v1.json
-!baselines/
-baselines/**
-!baselines/feature_budget.py
-!baselines/hash_regex.py
-!baselines/hash-regex-public.v1.json
+!main.py
+!requirements-router.txt
+!coordinator/
+!coordinator/chunk_processor.py
+!n-gram/
+!n-gram/ngram_classifier_v2_float32.joblib
+!n-gram/ngram_features_v2.py
+!n-gram/ngram_predict_optimized.py
+!n-gram/predict_ngram_v2.py
+!라우터 분류/
+!라우터 분류/artifacts/
+!라우터 분류/artifacts/router_model.joblib
+!라우터 분류/router.py
+!라우터 분류/router_core.py
 !container/
-container/**
 !container/Dockerfile
-!container/measurement.Dockerfile
-!container/entrypoint.py
+!container/router-run
