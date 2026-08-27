@@ -10,7 +10,7 @@ SPDX-License-Identifier: Apache-2.0
 - 파일: `n-gram/ngram_classifier_v2_float32.joblib`
 - SHA-256: `87ae23d6207443c422c11e1503ac0f56262f97a22be1fcf2586d95f23d006a4e`
 - 용도: prompt에서 response language, request type, content domain, answer format 특징 추출
-- 학습 자료: 대회가 제공한 reviewed Train/Dev 분류 라벨
+- 학습 자료: 대회가 제공한 reviewed Train 분류 라벨 1차 학습 + Dev 분류 라벨 2차 학습
 - 외부 추론 모델: 없음
 - 실행 라이선스: 프로젝트 Apache-2.0
 
@@ -18,11 +18,10 @@ SPDX-License-Identifier: Apache-2.0
 
 - 파일: `라우터 분류/artifacts/router_model.joblib`
 - SHA-256: `bc4c44dd15edacf20415994f1881d3c85c6da643cba611698db80e4148406359`
-- 학습 자료: 공식 Train 1,760문항 outcomes, Dev 880문항 outcomes, reviewed 분류 라벨
+- 학습 자료: 공식 Train 1,760문항 outcomes, reviewed 분류 라벨 + Dev 880문항 outcomes(2차 학습)
 - 정책 선택: Train 적합 후 Dev 분리 검증
 - 최종 품질 모델: 정책 확정 뒤 공개 Train+Dev 2,640문항으로 재적합
 - 토큰 모델: Train 적합과 Dev 총합·길이-band 보정 상태를 유지
-- `num_generations`: 사용자 지시에 따라 특징·목표·비용에서 사용하지 않음
 - 실행 라이선스: 프로젝트 Apache-2.0
 
 ## DeBERTa tokenizer
