@@ -38,7 +38,7 @@ OUTPUT_SCHEMA_VERSION = 1
 # Public Dev에서 고른 배포 정책이다.
 TIER_RISK_POLICY = {
     "fast": {
-        "budget_ratio_cap": 1.25,
+        "budget_ratio_cap": 1.23,
         "allowed_models": ("ax31-light", "ax31"),
         "band_alphas": (0.05, 0.10, 0.20, 0.40),
         "think_risk_mode": "all",
